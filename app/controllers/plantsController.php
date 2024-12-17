@@ -10,7 +10,7 @@ class plantsController {
     }
 
     public function index() {
-        $users = $this->plantsModel->getAllplants();
+        $plants = $this->plantsModel->getAllplants();
         require_once '../app/views/plants/index.php';
 
     }
