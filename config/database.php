@@ -1,10 +1,10 @@
 <?php
 // config/database.php
 class Database {
-    private $host = 'localhost';
-    private $db_name = 'mvc';
-    private $username = 'root';
-    private $password = '';
+    private $host = '160.19.166.42';
+    private $db_name = '2C_klp2';
+    private $username = '2C_klp2';
+    private $password = 'eAw7tH(DKUC/KH9m';
     private $conn;
 
     public function connect() {
