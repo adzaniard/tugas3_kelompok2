@@ -21,6 +21,7 @@
                         <table class="table table-bordered" id="myTable">
                             <thead>
                                 <tr>
+                                <th scope="col">Id Kategori</th>
                                     <th scope="col">Kategori</th>
                                     <th scope="col">Deskripsi</th>
                                     <th scope="col">Aksi</th>
@@ -29,6 +30,7 @@
                             <tbody>
                                 <?php foreach ($categories as $kategori): ?>
                                     <tr>
+                                    <td><?= htmlspecialchars($kategori['id_kategori']) ?></td>
                                         <td><?= htmlspecialchars($kategori['nama_kategori']) ?></td>
                                         <td><?= htmlspecialchars($kategori['deskripsi']) ?></td>
                                         <td>
