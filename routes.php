@@ -7,7 +7,7 @@ $controller = new OrderController();
 $url = $_SERVER['REQUEST_URI'];
 $requestMethod = $_SERVER['REQUEST_METHOD'];
 
-if ($url == '/order/index' || $url == '/') {
+if ($url == '/order/index') {
     $controller->index();
 } elseif ($url == '/order/create' && $requestMethod == 'GET') {
     $controller->create();
@@ -22,6 +22,8 @@ if ($url == '/order/index' || $url == '/') {
 } elseif (preg_match('/\/order\/delete\/(\d+)/', $url, $matches) && $requestMethod == 'GET') {
     $orderId = $matches[1];
     $controller->delete($orderId);
+} elseif ($url == '/'){
+    $controller->dashboard();
 } else {
     http_response_code(404);
     echo "404 Not Found";
