@@ -14,7 +14,9 @@ class CategoriesController {
         require_once '../app/views/categories/index.php';
 
     }
-
+    public function dashboard() {
+        require_once '../app/views/halamanUtama.php';
+    }
     public function create() {
         require_once '../app/views/categories/create.php';
     }

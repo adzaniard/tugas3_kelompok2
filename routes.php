@@ -7,7 +7,7 @@ $controller = new CategoriesController();
 $url = $_SERVER['REQUEST_URI'];
 $requestMethod = $_SERVER['REQUEST_METHOD'];
 
-if ($url == '/categories/index' || $url == '/') {
+if ($url == '/categories/index') {
     $controller->index();
 } elseif ($url == '/categories/create' && $requestMethod == 'GET') {
     $controller->create();
@@ -22,7 +22,10 @@ if ($url == '/categories/index' || $url == '/') {
 } elseif (preg_match('/\/categories\/delete\/(\d+)/', $url, $matches) && $requestMethod == 'GET') {
     $CategoriesId = $matches[1];
     $controller->delete($CategoriesId);
-} else {
+}elseif($url == '/'){
+    $controller->dashboard();
+}
+ else {
     http_response_code(404);
     echo "404 Not Found";
 }

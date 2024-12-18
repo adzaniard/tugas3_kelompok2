@@ -2,6 +2,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        height: 100vh;
+    }
+
+    /* Background Gambar Blur */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1692328601572-27f87f516a90?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGFuYW1hbnxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+        filter: blur(2px); /* Efek blur */
+        z-index: -1; /* Agar di belakang konten */
+    }
+
+    .container {
+        position: relative;
+        z-index: 1; /* Konten tampil di atas background */
+    }
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -31,7 +57,7 @@
                         </div>
 
                         <!-- Tombol Update dan Back -->
-                        <div class="form-group text-right">
+                        <div class="form-group text-left">
                             <button type="submit" class="btn btn-success">Update</button>
                             <a href="/categories/index" class="btn btn-primary">Back to List</a>
                         </div>
