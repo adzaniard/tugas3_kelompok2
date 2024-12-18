@@ -16,7 +16,8 @@ ketika pengguna sudah selese mengisi data diri di tabel users, pengguna kemudian
 ## categories
 di tabel ini admin meng setting nama kategori apa saja yang masuk ke dalam tanaman hias lengkap dengan deskripsi nya juga, yang nanti nya ketika pengguna memilih tanaman dengan kategori tertentu akan secara otomatis juga keluar deskripsinya
 
-## 
+## orders
+di tabel ini admin memilih data tanaman yang sudah diinputkan oleh pengguna seperti nama tanaman, dan juga nama pembeli nya, kemudian admin memasukan data status tanamn sebagai contoh dikemas atau dalam perjalanan
 
 ## Tujuan
 Tujuan dari praktikum ini adalah untuk memberikan pemahaman yang lebih baik tentang arsitektur MVC dalam pengembangan aplikasi web dan untuk meningkatkan kemampuan mahasiswa dalam menerapkan konsep OOP serta melakukan operasi CRUD (Create, Read, Update, Delete) pada data.
