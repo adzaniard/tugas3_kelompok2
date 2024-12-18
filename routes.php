@@ -7,7 +7,7 @@ $controller = new plantsController();
 $url = $_SERVER['REQUEST_URI'];
 $requestMethod = $_SERVER['REQUEST_METHOD'];
 
-if ($url == '/plants/index' || $url == '/') {
+if ($url == '/plants/index') {
     $controller->index();
 } elseif ($url == '/plants/create' && $requestMethod == 'GET') {
     $controller->create();
@@ -22,7 +22,9 @@ if ($url == '/plants/index' || $url == '/') {
 } elseif (preg_match('/\/plants\/delete\/(\d+)/', $url, $matches) && $requestMethod == 'GET') {
     $plantsId = $matches[1];
     $controller->delete($plantsId);
-} else {
+} elseif ($url == '/'){
+    $controller->dashboard();
+}else {
     http_response_code(404);
     echo "404 Not Found";
 }
