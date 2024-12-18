@@ -1,5 +1,7 @@
 # Praktikum Pemgrograman Web 2 - Politeknik Negeri Cilacap
 
+Pada Praktikum Pemrogaraman Web kali ini kami mendapatkan projek 
+
 ## Informasi Umum
 Proyek ini merupakan bagian dari kegiatan Praktisi Mengajar batch 5, antara [Politeknik Negeri Cilacap](https://pnc.ac.id/) dengan praktisi [I Nyoman Indra Darmawan](https://nyoman.id) untuk mata kuliah Praktikum Pemgrograman Web 2
 
