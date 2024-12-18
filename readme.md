@@ -14,7 +14,9 @@ ketika pengguna sudah masuk ke bagian users, akan melihat tabel tombol tambah pe
 ketika pengguna sudah selese mengisi data diri di tabel users, pengguna kemudian mengisi data di tabel plants yang dimana akan melihat tabel tombol tambah tanaman yang dimana ketika sudah selesai mengisikan data tanaman dan tersimpan kemudian kembali, pengguna akan melihat data nya yang baru saja di inputkan dan apabila terjadi kekeliruan dalam pengisian data, dapat menekan tombol edit untuk mengubah data yang keliru tadi, dan apabila pengguna ingin membatalkan data tanamannya dapat menekan tombol hapus
 
 ## categories
-ketika pengguna sudah selese mengisi data tanaman di tabel plants, pengguna kemudian mengisi data di tabel categories yang dimana akan melihat tabel tombol tambah tanaman yang dimana ketika sudah selesai mengisikan data tanaman dan tersimpan kemudian kembali, pengguna akan melihat data nya yang baru saja di inputkan dan apabila terjadi kekeliruan dalam pengisian data, dapat menekan tombol edit untuk meng
+di tabel ini admin meng setting nama kategori apa saja yang masuk ke dalam tanaman hias lengkap dengan deskripsi nya juga, yang nanti nya ketika pengguna memilih tanaman dengan kategori tertentu akan secara otomatis juga keluar deskripsinya
+
+## 
 
 ## Tujuan
 Tujuan dari praktikum ini adalah untuk memberikan pemahaman yang lebih baik tentang arsitektur MVC dalam pengembangan aplikasi web dan untuk meningkatkan kemampuan mahasiswa dalam menerapkan konsep OOP serta melakukan operasi CRUD (Create, Read, Update, Delete) pada data.
