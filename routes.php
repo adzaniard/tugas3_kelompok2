@@ -1,9 +1,10 @@
 <?php
 // routes.php
 
-require_once 'app/controllers/plantsController.php';
 
-$controller = new plantsController();
+require_once 'app/controllers/OrderController.php';
+
+$controller = new OrderController();
 $url = $_SERVER['REQUEST_URI'];
 $requestMethod = $_SERVER['REQUEST_METHOD'];
 
