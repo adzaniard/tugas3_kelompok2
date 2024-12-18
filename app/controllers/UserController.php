@@ -12,7 +12,10 @@ class UserController {
     public function index() {
         $users = $this->userModel->getAllUsers();
         require_once '../app/views/user/index.php';
+    }
 
+    public function dashboard() {
+        require_once '../app/views/halamanUtama.php';
     }
 
     public function create() {

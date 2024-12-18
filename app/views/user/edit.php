@@ -8,6 +8,33 @@
     <title>Edit Pengguna</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        height: 100vh;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1692328601572-27f87f516a90?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGFuYW1hbnxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+        filter: blur(2px);
+        z-index: -1; 
+    }
+
+    .container {
+        position: relative;
+        z-index: 1; 
+    }
+
+    
+</style>
 </head>
 
 <body>
@@ -16,7 +43,7 @@
             <div class="col-md-8 offset-md-2">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Edit Pengguna</h4>
+                        <h4>EDIT PENGGUNA</h4>
                     </div>
                     <div class="card-body">
                         <form action="/user/update/<?php echo $user['id_user']; ?>" method="POST">
@@ -41,10 +68,9 @@
                             </div>
 
                             <button type="submit" class="btn btn-success">Update</button>
-                            <button type="reset" class="btn btn-warning">Reset</button>
+                            <a href="/user/index" class="btn btn-primary">Back to List</a>
 
                         </form>
-                        <a href="/user/index">Back to List</a>
                     </div>
                 </div>
             </div>
