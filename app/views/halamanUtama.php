@@ -123,7 +123,7 @@
               <h5 class="card-title">Orders</h5>
               <img src="assets/img/4.png" alt="">
               <p class="card-text">Pengelolaan data pesanan tanaman.</p>
-              <a href="/orders/index.php" class="btn btn-primary">Go to Orders</a>
+              <a href="/order/index" class="btn btn-primary">Go to Orders</a>
             </div>
           </div>
         </div>
