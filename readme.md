@@ -470,7 +470,8 @@ mvc-sample/
 
 ## Tabel
 ### Halaman Utama
-    <imG SRC="public/assets/img/halamanUtama.png">
+<imG SRC="public/assets/img/halamanUtama.jpg">
+
 ### Users
     Ketika pengguna mengakses menu Users akan diarahkan ke halaman yang menampilkan seluruh data pengguna dalam bentuk tabel. Pada halaman ini, terdapat beberapa fitur utama yang dapat digunakan untuk mengelola data pengguna, yaitu:
     - Tambah Pengguna Baru 
