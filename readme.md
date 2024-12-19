@@ -1,21 +1,28 @@
 # Praktikum Pemgrograman Web 2 - Aplikasi Jual Beli Tanaman Hias
+
 Pada Pemprograman Web 2 sebagai bagian dari tugas UAS dibuatlah proyek ini oleh Kelompok 2 dari kelas TI-2C Politeknik Negeri Cilacap yang beranggotakan:
+
 1. Adzania Rizki Dewani (230202049)
 2. Arfilal Faiznadi (230302053)
 3. Dewi Mona Rizki (230102058)
 4. Hana Kurnia Ayu (230202062)
 
 ## Deskripsi Proyek
+
 Proyek ini merupakan aplikasi web sederhana yang menerapkan arsitektur Model-View-Controller (MVC) dengan menggunakan konsep Pemrograman Berorientasi Objek (OOP).
-Dalam proyek ini layaknya dalam sebuah aplikasi biasa yang dimana ketika pengguna akan menggunakan aplikasi ini, pengguna akan diarahkan kepada bagian halaman utama atau dashboard aplikasi yang berisikan beberapa tampilan menu  user, plants, categories, dan orders
+Dalam proyek ini layaknya dalam sebuah aplikasi biasa yang dimana ketika pengguna akan menggunakan aplikasi ini, pengguna akan diarahkan kepada bagian halaman utama atau dashboard aplikasi yang berisikan beberapa tampilan menu user, plants, categories, dan orders
 
 ## Tujuan
+
 Tujuan dari praktikum ini adalah untuk memberikan pemahaman yang lebih baik tentang arsitektur MVC dalam pengembangan aplikasi web dan untuk meningkatkan kemampuan mahasiswa dalam menerapkan konsep OOP serta melakukan operasi CRUD (Create, Read, Update, Delete) pada data.
 
-## Arsitektur  MVC Proyek Jual-Beli Tanaman Hias
-MVC (Model-View-Controller) adalah salah satu pola arsitektur yang sering digunakan dalam pengembangan perangkat lunak, termasuk dalam pengembangan aplikasi berbasis web atau desktop. Tujuan utama MVC adalah memisahkan logika aplikasi menjadi tiga komponen utama untuk mempermudah pengelolaan, pemeliharaan, dan pengembangan. 
+## Arsitektur MVC Proyek Jual-Beli Tanaman Hias
+
+MVC (Model-View-Controller) adalah salah satu pola arsitektur yang sering digunakan dalam pengembangan perangkat lunak, termasuk dalam pengembangan aplikasi berbasis web atau desktop. Tujuan utama MVC adalah memisahkan logika aplikasi menjadi tiga komponen utama untuk mempermudah pengelolaan, pemeliharaan, dan pengembangan.
+
 1. **Model**
-Model bertanggung jawab atas pengelolaan data dan logika bisnis aplikasi. Model menangani pengambilan, penyimpanan, dan manipulasi data yang berasal dari basis data atau sumber lainnya.
+   Model bertanggung jawab atas pengelolaan data dan logika bisnis aplikasi. Model menangani pengambilan, penyimpanan, dan manipulasi data yang berasal dari basis data atau sumber lainnya.
+
 ```
 <?php
 // app/models/User.php
@@ -72,9 +79,10 @@ class User {
 ```
 
 2. **View**
-View bertugas untuk menampilkan data kepada pengguna dalam bentuk antarmuka grafis (UI). View hanya bertanggung jawab untuk presentasi data, tanpa mengetahui bagaimana data itu diperoleh atau diproses.
+   View bertugas untuk menampilkan data kepada pengguna dalam bentuk antarmuka grafis (UI). View hanya bertanggung jawab untuk presentasi data, tanpa mengetahui bagaimana data itu diperoleh atau diproses.
 
 **Create**
+
 ```
 <!-- app/views/user/create.php -->
 <!DOCTYPE html>
@@ -162,6 +170,7 @@ View bertugas untuk menampilkan data kepada pengguna dalam bentuk antarmuka graf
 ```
 
 **Edit**
+
 ```
 <!-- app/views/user/edit.php -->
 <!DOCTYPE html>
@@ -190,15 +199,15 @@ View bertugas untuk menampilkan data kepada pengguna dalam bentuk antarmuka graf
         height: 100vh;
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1692328601572-27f87f516a90?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGFuYW1hbnxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
         filter: blur(2px);
-        z-index: -1; 
+        z-index: -1;
     }
 
     .container {
         position: relative;
-        z-index: 1; 
+        z-index: 1;
     }
 
-    
+
 </style>
 </head>
 
@@ -250,6 +259,7 @@ View bertugas untuk menampilkan data kepada pengguna dalam bentuk antarmuka graf
 ```
 
 **Data Table**
+
 ```
 <!-- app/views/user/index.php -->
 <!DOCTYPE html>
@@ -377,7 +387,8 @@ View bertugas untuk menampilkan data kepada pengguna dalam bentuk antarmuka graf
 ```
 
 3. **Controller**
-Controller berfungsi sebagai penghubung antara Model dan View. Komponen ini menerima input dari pengguna, memprosesnya (dengan melibatkan Model), dan menentukan apa yang akan ditampilkan oleh View.
+   Controller berfungsi sebagai penghubung antara Model dan View. Komponen ini menerima input dari pengguna, memprosesnya (dengan melibatkan Model), dan menentukan apa yang akan ditampilkan oleh View.
+
 ```
 <?php
 // app/controllers/UserController.php
@@ -440,6 +451,7 @@ class UserController {
 ```
 
 ## Tech Stack
+
 - **Bahasa Pemrograman:** PHP
 - **Database:** MySQL
 - **Frontend:** HTML, CSS, JavaScript
@@ -447,6 +459,7 @@ class UserController {
 - **Web Server:** Apache (dengan .htaccess untuk pengaturan URL)
 
 ## Struktur Proyek
+
 ```plaintext
 mvc-sample/
 ├── app/
@@ -457,7 +470,7 @@ mvc-sample/
 │   └── views/
 │       └── user/
 │           ├── index.php              # View untuk menampilkan daftar dan manajemen pengguna
-│           ├── edit.php               # Edit untuk menampilkan halaman edit pengguna            
+│           ├── edit.php               # Edit untuk menampilkan halaman edit pengguna
 │           └── create.php             # View untuk menampilkan form pembuatan pengguna baru
 ├── config/
 │   └── database.php                   # Konfigurasi database
@@ -469,27 +482,32 @@ mvc-sample/
 ```
 
 ## Tabel
+
 ### Halaman Utama
+
 <imG SRC="public/assets/img/halamanUtama.jpg">
 
 ### Users
- Ketika pengguna mengakses menu Users akan diarahkan ke halaman yang menampilkan seluruh data pengguna dalam bentuk tabel. Pada halaman ini, terdapat beberapa fitur utama yang dapat digunakan untuk mengelola data pengguna, yaitu:
- - Tambah Pengguna Baru 
- Pengguna dapat menekan tombol Tambah Pengguna Baru untuk memasukkan data diri, dan setelah disimpan, tabel akan otomatis diperbarui sehingga data baru langsung terlihat.
-<imG SRC="public/assets/img/menuUser.jpg">
-    <imG SRC="public/assets/img/tambahUser.jpg">
-    - Edit Data Pengguna
-    Jika terdapat kesalahan data, pengguna dapat menggunakan tombol Edit untuk memperbaikinya tanpa perlu menghapus data lama.
-    <imG SRC="public/assets/img/editUser.jpg">
-    <imG SRC="public/assets/img/setelahEditUser.jpg">
-    - Hapus Data Pengguna
-    Pengguna dapat menggunakan fitur Hapus untuk menghapus data tertentu, yang akan hilang dari tabel setelah konfirmasi.
-    <imG SRC="public/assets/img/hapusUser.jpg">
-    <imG SRC="public/assets/img/setelahHapusUser.jpg">
+
+Ketika pengguna mengakses menu Users akan diarahkan ke halaman yang menampilkan seluruh data pengguna dalam bentuk tabel. Pada halaman ini, terdapat beberapa fitur utama yang dapat digunakan untuk mengelola data pengguna, yaitu:
+
+- Tambah Pengguna Baru
+  Pengguna dapat menekan tombol Tambah Pengguna Baru untuk memasukkan data diri, dan setelah disimpan, tabel akan otomatis diperbarui sehingga data baru langsung terlihat.
+  <imG SRC="public/assets/img/menuUser.jpg">
+  <imG SRC="public/assets/img/tambahUser.jpg">
+- Edit Data Pengguna
+  Jika terdapat kesalahan data, pengguna dapat menggunakan tombol Edit untuk memperbaikinya tanpa perlu menghapus data lama.
+  <imG SRC="public/assets/img/editUser.jpg">
+  <imG SRC="public/assets/img/setelahEditUser.jpg"> - Hapus Data Pengguna
+  Pengguna dapat menggunakan fitur Hapus untuk menghapus data tertentu, yang akan hilang dari tabel setelah konfirmasi.
+  <imG SRC="public/assets/img/hapusUser.jpg">
+  <imG SRC="public/assets/img/setelahHapusUser.jpg">
 
 ### Plants
+
     Dalam tabel ini, ketika pengguna sudah selesai mengisi data diri di tabel users, pengguna kemudian mengisi data di tabel plants yang dimana akan melihat tabel tombol tambah tanaman, saat mengisi data akan diminta mengisi nama kategori dan deskripsi yang dimana itu sudah tersambung di tabel kategori, ketika sudah selesai mengisikan data tanaman dan tersimpan kemudian kembali, pengguna akan melihat data nya yang baru saja di inputkan dan apabila terjadi kekeliruan dalam pengisian data, dapat menekan tombol edit untuk mengubah data yang keliru tadi, dan apabila pengguna ingin membatalkan data tanamannya dapat menekan tombol hapus
     - Tampilan awal tabel plants
+
 <imG SRC="public/assets/img/menuTanaman.jpg">
     - Tampilan tambah tanaman
         <imG SRC="public/assets/img/tambahTanaman.jpg">
@@ -500,8 +518,10 @@ mvc-sample/
         <imG SRC="public/assets/img/setelahHapusTanaman.jpg">
 
 ### Categories
+
     Pada tabel categories terdapat atribut id kategori, kategori dan deskripsi.Tabel categories merupakan salah satu bagian dari tabel kelompok 2 jual beli tanaman hias.
     - Tampilan awal tabel categories
+
 <imG SRC="public/assets/img/menuKategori.jpg">
     - Tampilan tambah categories
         <imG SRC="public/assets/img/tambahKategori.jpg">
@@ -513,9 +533,11 @@ mvc-sample/
         <imG SRC="public/assets/img/setelahHapusKategori.jpg">
 
 ### Orders
+
     Sistem ini dirancang untuk mengelola pesanan dengan mengintegrasikan data dari dua tabel yang sudah ada: plants dan users. Pada tabel orders admin memilih nama tanaman yang sudah diinputkan oleh tabel plants, dan juga nama pembelinya yang sudah diinputkan oleh tabel users, kemudian admin memasukan data status tanaman sebagai keterangan pesanan contohnya dikemas atau dalam perjalanan. Pada tabel orders memiliki fitur admin dapat menambah, mengedit, dan menghapus nama tanaman, admin juga dapat menambah, mengedit, menghapus pembeli, kemudian admin dapat menambah, mengedit, menghapus status pesanan.
     - Tambah order
     Menambahkan pesanan baru dengan memilih nama tanaman dan pembeli dari tabel yang ada, serta menetapkan status pesanan.
+
 <imG SRC="public/assets/img/menuOrder.jpg">
     <imG SRC="public/assets/img/tambahOrder.jpg">
     - Edit order
@@ -525,6 +547,3 @@ mvc-sample/
     - Hapus oder
     Menghapus pesanan jika diperlukan.
     <imG SRC="public/assets/img/setelahHapusOrder.jpg">
-
-
-
