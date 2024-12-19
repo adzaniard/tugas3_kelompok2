@@ -512,35 +512,35 @@ Ketika pengguna mengakses menu Users akan diarahkan ke halaman yang menampilkan 
 Dalam tabel ini, ketika pengguna sudah selesai mengisi data diri di tabel users, pengguna kemudian mengisi data di tabel plants yang dimana akan melihat tabel tombol tambah tanaman, saat mengisi data akan diminta mengisi nama kategori dan deskripsi yang dimana itu sudah tersambung di tabel kategori, ketika sudah selesai mengisikan data tanaman dan tersimpan kemudian kembali, pengguna akan melihat data nya yang baru saja di inputkan dan apabila terjadi kekeliruan dalam pengisian data, dapat menekan tombol edit untuk mengubah data yang keliru tadi, dan apabila pengguna ingin membatalkan data tanamannya dapat menekan tombol hapus
 
 - Tampilan awal tabel plants
-<imG SRC="public/assets/img/menuTanaman.jpg">
+    <imG SRC="public/assets/img/menuTanaman.jpg">
 
 - Tampilan tambah tanaman
-        <imG SRC="public/assets/img/tambahTanaman.jpg">
+    <imG SRC="public/assets/img/tambahTanaman.jpg">
 
 - Tampilan edit
-        <imG SRC="public/assets/img/editTanaman.jpg">
-        <imG SRC="public/assets/img/setelahEditTanaman.jpg">
+    <imG SRC="public/assets/img/editTanaman.jpg">
+    <imG SRC="public/assets/img/setelahEditTanaman.jpg">
 
 - Tampilan Hapus
-        <imG SRC="public/assets/img/setelahHapusTanaman.jpg">
+    <imG SRC="public/assets/img/setelahHapusTanaman.jpg">
 
 ### Categories
 
 Pada tabel categories terdapat atribut id kategori, kategori dan deskripsi.Tabel categories merupakan salah satu bagian dari tabel kelompok 2 jual beli tanaman hias.
 
 - Tampilan awal tabel categories
-<imG SRC="public/assets/img/menuKategori.jpg">
+    <imG SRC="public/assets/img/menuKategori.jpg">
 
 - Tampilan tambah categories
-        <imG SRC="public/assets/img/tambahKategori.jpg">
+    <imG SRC="public/assets/img/tambahKategori.jpg">
 
 - Tampilan edit categories
-        <imG SRC="public/assets/img/editKategori.jpg">
-        <imG SRC="public/assets/img/setelahEditKategori.jpg">
+    <imG SRC="public/assets/img/editKategori.jpg">
+    <imG SRC="public/assets/img/setelahEditKategori.jpg">
 
 - Tampilan hapus categories
-        <imG SRC="public/assets/img/hapusKategori.jpg">
-        <imG SRC="public/assets/img/setelahHapusKategori.jpg">
+    <imG SRC="public/assets/img/hapusKategori.jpg">
+    <imG SRC="public/assets/img/setelahHapusKategori.jpg">
 
 ### Orders
 
@@ -550,7 +550,7 @@ Sistem ini dirancang untuk mengelola pesanan dengan mengintegrasikan data dari d
 
   Menambahkan pesanan baru dengan memilih nama tanaman dan pembeli dari tabel yang ada, serta menetapkan status pesanan.
 
-<imG SRC="public/assets/img/menuOrder.jpg">
+    <imG SRC="public/assets/img/menuOrder.jpg">
     <imG SRC="public/assets/img/tambahOrder.jpg">
 
 - Edit order
