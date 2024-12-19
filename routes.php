@@ -59,7 +59,6 @@ if ($url == '/categories/index') {
 
 if ($url == '/order/index' || $url == '/') {
     $controller2->index();
->>>>>>> 8c77d9568e7fea1c0adf8825b6ab8d845c9b898b
 } elseif ($url == '/order/create' && $requestMethod == 'GET') {
     $controller2->create();
 } elseif ($url == '/order/store' && $requestMethod == 'POST') {
