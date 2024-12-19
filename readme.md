@@ -475,55 +475,55 @@ mvc-sample/
     Ketika pengguna mengakses menu Users akan diarahkan ke halaman yang menampilkan seluruh data pengguna dalam bentuk tabel. Pada halaman ini, terdapat beberapa fitur utama yang dapat digunakan untuk mengelola data pengguna, yaitu:
     - Tambah Pengguna Baru 
     Pengguna dapat menekan tombol Tambah Pengguna Baru untuk memasukkan data diri, dan setelah disimpan, tabel akan otomatis diperbarui sehingga data baru langsung terlihat.
-    <imG SRC="public/assets/img/menuUser.png">
-    <imG SRC="public/assets/img/tambahUser.png">
+<imG SRC="public/assets/img/menuUser.jpg">
+    <imG SRC="public/assets/img/tambahUser.jpg">
     - Edit Data Pengguna
     Jika terdapat kesalahan data, pengguna dapat menggunakan tombol Edit untuk memperbaikinya tanpa perlu menghapus data lama.
-    <imG SRC="public/assets/img/editUser.png">
-    <imG SRC="public/assets/img/setelahEditUser.png">
+    <imG SRC="public/assets/img/editUser.jpg">
+    <imG SRC="public/assets/img/setelahEditUser.jpg">
     - Hapus Data Pengguna
     Pengguna dapat menggunakan fitur Hapus untuk menghapus data tertentu, yang akan hilang dari tabel setelah konfirmasi.
-    <imG SRC="public/assets/img/hapusUser.png">
-    <imG SRC="public/assets/img/setelahHapusUser.png">
+    <imG SRC="public/assets/img/hapusUser.jpg">
+    <imG SRC="public/assets/img/setelahHapusUser.jpg">
 
 ### Plants
     Dalam tabel ini, ketika pengguna sudah selesai mengisi data diri di tabel users, pengguna kemudian mengisi data di tabel plants yang dimana akan melihat tabel tombol tambah tanaman, saat mengisi data akan diminta mengisi nama kategori dan deskripsi yang dimana itu sudah tersambung di tabel kategori, ketika sudah selesai mengisikan data tanaman dan tersimpan kemudian kembali, pengguna akan melihat data nya yang baru saja di inputkan dan apabila terjadi kekeliruan dalam pengisian data, dapat menekan tombol edit untuk mengubah data yang keliru tadi, dan apabila pengguna ingin membatalkan data tanamannya dapat menekan tombol hapus
     - Tampilan awal tabel plants
-<imG SRC="public/assets/img/menuTanaman.png">
+<imG SRC="public/assets/img/menuTanaman.jpg">
     - Tampilan tambah tanaman
-        <imG SRC="public/assets/img/tambahTanaman.png">
+        <imG SRC="public/assets/img/tambahTanaman.jpg">
     - Tampilan edit
-        <imG SRC="public/assets/img/editTanaman.png">
-        <imG SRC="public/assets/img/setelahEditTanaman.png">
+        <imG SRC="public/assets/img/editTanaman.jpg">
+        <imG SRC="public/assets/img/setelahEditTanaman.jpg">
     - Tampilan Hapus
-        <imG SRC="public/assets/img/setelahHapusTanaman.png">
+        <imG SRC="public/assets/img/setelahHapusTanaman.jpg">
 
 ### Categories
     Pada tabel categories terdapat atribut id kategori, kategori dan deskripsi.Tabel categories merupakan salah satu bagian dari tabel kelompok 2 jual beli tanaman hias.
     - Tampilan awal tabel categories
-<imG SRC="public/assets/img/menuKategori.png">
+<imG SRC="public/assets/img/menuKategori.jpg">
     - Tampilan tambah categories
-        <imG SRC="public/assets/img/tambahKategori.png">
+        <imG SRC="public/assets/img/tambahKategori.jpg">
     - Tampilan edit categories
-        <imG SRC="public/assets/img/editKategori.png">
-        <imG SRC="public/assets/img/setelahEditKategori.png">
+        <imG SRC="public/assets/img/editKategori.jpg">
+        <imG SRC="public/assets/img/setelahEditKategori.jpg">
     - Tampilan hapus categories
-        <imG SRC="public/assets/img/hapusKategori.png">
-        <imG SRC="public/assets/img/setelahHapusKategori.png">
+        <imG SRC="public/assets/img/hapusKategori.jpg">
+        <imG SRC="public/assets/img/setelahHapusKategori.jpg">
 
 ### Orders
     Sistem ini dirancang untuk mengelola pesanan dengan mengintegrasikan data dari dua tabel yang sudah ada: plants dan users. Pada tabel orders admin memilih nama tanaman yang sudah diinputkan oleh tabel plants, dan juga nama pembelinya yang sudah diinputkan oleh tabel users, kemudian admin memasukan data status tanaman sebagai keterangan pesanan contohnya dikemas atau dalam perjalanan. Pada tabel orders memiliki fitur admin dapat menambah, mengedit, dan menghapus nama tanaman, admin juga dapat menambah, mengedit, menghapus pembeli, kemudian admin dapat menambah, mengedit, menghapus status pesanan.
     - Tambah order
     Menambahkan pesanan baru dengan memilih nama tanaman dan pembeli dari tabel yang ada, serta menetapkan status pesanan.
-<imG SRC="public/assets/img/menuOrder.png">
-    <imG SRC="public/assets/img/tambahOrder.png">
+<imG SRC="public/assets/img/menuOrder.jpg">
+    <imG SRC="public/assets/img/tambahOrder.jpg">
     - Edit order
     Mengedit pesanan untuk memperbarui nama tanaman, nama pembeli, atau status pesanan.
-    <imG SRC="public/assets/img/editOrder.png">
-    <imG SRC="public/assets/img/setelahEditOrder.png">
+    <imG SRC="public/assets/img/editOrder.jpg">
+    <imG SRC="public/assets/img/setelahEditOrder.jpg">
     - Hapus oder
     Menghapus pesanan jika diperlukan.
-    <imG SRC="public/assets/img/setelahHapusOrder.png">
+    <imG SRC="public/assets/img/setelahHapusOrder.jpg">
 
 
 
