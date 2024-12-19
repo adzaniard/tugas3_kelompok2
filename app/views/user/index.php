@@ -57,7 +57,7 @@
                             <li><a class="dropdown-item" href="/user/index">Data Users</a></li>
                             <li><a class="dropdown-item" href="/categories/index">Data Categories</a></li>
                             <li><a class="dropdown-item" href="/plants/index">Data Plants</a></li>
-                            <li><a class="dropdown-item" href="/orders/index">Data Orders</a></li>
+                            <li><a class="dropdown-item" href="/order/index">Data Orders</a></li>
                         </ul>
                     </li>
                 </ul>

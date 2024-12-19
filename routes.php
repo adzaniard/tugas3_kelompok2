@@ -31,10 +31,11 @@ if ($url == '/plants/index') {
     $controller->delete($plantsId);
 } elseif ($url == '/'){
     $controller->dashboard();
-}else {
-    http_response_code(404);
-    echo "404 Not Found";
 }
+// else {
+//     http_response_code(404);
+//     echo "404 Not Found";
+// }
 
 if ($url == '/user/index') {
     $controller3->index();
@@ -51,12 +52,14 @@ if ($url == '/user/index') {
 } elseif (preg_match('/\/user\/delete\/(\d+)/', $url, $matches) && $requestMethod == 'GET') {
     $userId = $matches[1];
     $controller3->delete($userId);
-}elseif ($url == '/'){
-    $controller3->dashboard();
-}else {
-        http_response_code(404);
-        echo "404 Not Found";
 }
+// elseif ($url == '/'){
+//     $controller3->dashboard();
+// }
+// else {
+//         http_response_code(404);
+//         echo "404 Not Found";
+// }
 
 if ($url == '/categories/index') {
     $controller1->index();
@@ -73,14 +76,16 @@ if ($url == '/categories/index') {
 } elseif (preg_match('/\/categories\/delete\/(\d+)/', $url, $matches) && $requestMethod == 'GET') {
     $CategoriesId = $matches[1];
     $controller1->delete($CategoriesId);
-}elseif($url == '/'){
-    $controller1->dashboard();
-}else {
-        http_response_code(404);
-        echo "404 Not Found";
 }
+// elseif($url == '/'){
+//     $controller1->dashboard();
+// }
+// else {
+//         http_response_code(404);
+//         echo "404 Not Found";
+// }
 
-if ($url == '/order/index' || $url == '/') {
+if ($url == '/order/index') {
     $controller2->index();
 } elseif ($url == '/order/create' && $requestMethod == 'GET') {
     $controller2->create();
@@ -95,9 +100,11 @@ if ($url == '/order/index' || $url == '/') {
 } elseif (preg_match('/\/order\/delete\/(\d+)/', $url, $matches) && $requestMethod == 'GET') {
     $orderId = $matches[1];
     $controller2->delete($orderId);
-} elseif ($url == '/'){
-    $controller2->dashboard();
-} else {
-    http_response_code(404);
-    echo "404 Not Found";
-}
+} 
+// elseif ($url == '/'){
+//     $controller2->dashboard();
+// } 
+// else {
+//     http_response_code(404);
+//     echo "404 Not Found";
+// }
