@@ -21,6 +21,7 @@ Tujuan dari praktikum ini adalah untuk memberikan pemahaman yang lebih baik tent
 MVC (Model-View-Controller) adalah salah satu pola arsitektur yang sering digunakan dalam pengembangan perangkat lunak, termasuk dalam pengembangan aplikasi berbasis web atau desktop. Tujuan utama MVC adalah memisahkan logika aplikasi menjadi tiga komponen utama untuk mempermudah pengelolaan, pemeliharaan, dan pengembangan.
 
 1. **Model**
+
    Model bertanggung jawab atas pengelolaan data dan logika bisnis aplikasi. Model menangani pengambilan, penyimpanan, dan manipulasi data yang berasal dari basis data atau sumber lainnya.
 
 ```
@@ -79,6 +80,7 @@ class User {
 ```
 
 2. **View**
+
    View bertugas untuk menampilkan data kepada pengguna dalam bentuk antarmuka grafis (UI). View hanya bertanggung jawab untuk presentasi data, tanpa mengetahui bagaimana data itu diperoleh atau diproses.
 
 **Create**
@@ -387,6 +389,7 @@ class User {
 ```
 
 3. **Controller**
+
    Controller berfungsi sebagai penghubung antara Model dan View. Komponen ini menerima input dari pengguna, memprosesnya (dengan melibatkan Model), dan menentukan apa yang akan ditampilkan oleh View.
 
 ```
