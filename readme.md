@@ -473,9 +473,9 @@ mvc-sample/
 <imG SRC="public/assets/img/halamanUtama.jpg">
 
 ### Users
-    Ketika pengguna mengakses menu Users akan diarahkan ke halaman yang menampilkan seluruh data pengguna dalam bentuk tabel. Pada halaman ini, terdapat beberapa fitur utama yang dapat digunakan untuk mengelola data pengguna, yaitu:
-    - Tambah Pengguna Baru 
-    Pengguna dapat menekan tombol Tambah Pengguna Baru untuk memasukkan data diri, dan setelah disimpan, tabel akan otomatis diperbarui sehingga data baru langsung terlihat.
+ Ketika pengguna mengakses menu Users akan diarahkan ke halaman yang menampilkan seluruh data pengguna dalam bentuk tabel. Pada halaman ini, terdapat beberapa fitur utama yang dapat digunakan untuk mengelola data pengguna, yaitu:
+ - Tambah Pengguna Baru 
+ Pengguna dapat menekan tombol Tambah Pengguna Baru untuk memasukkan data diri, dan setelah disimpan, tabel akan otomatis diperbarui sehingga data baru langsung terlihat.
 <imG SRC="public/assets/img/menuUser.jpg">
     <imG SRC="public/assets/img/tambahUser.jpg">
     - Edit Data Pengguna
