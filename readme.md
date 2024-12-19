@@ -73,6 +73,7 @@ class User {
 
 2. **View**
 View bertugas untuk menampilkan data kepada pengguna dalam bentuk antarmuka grafis (UI). View hanya bertanggung jawab untuk presentasi data, tanpa mengetahui bagaimana data itu diperoleh atau diproses.
+
 **Create**
 ```
 <!-- app/views/user/create.php -->
@@ -470,7 +471,7 @@ mvc-sample/
 ## Tabel
 ### Halaman Utama
     <imG SRC="public/assets/img/halamanUtama.png">
-### 1. Users
+### Users
     Ketika pengguna mengakses menu Users akan diarahkan ke halaman yang menampilkan seluruh data pengguna dalam bentuk tabel. Pada halaman ini, terdapat beberapa fitur utama yang dapat digunakan untuk mengelola data pengguna, yaitu:
     - Tambah Pengguna Baru 
     Pengguna dapat menekan tombol Tambah Pengguna Baru untuk memasukkan data diri, dan setelah disimpan, tabel akan otomatis diperbarui sehingga data baru langsung terlihat.
@@ -488,7 +489,7 @@ mvc-sample/
 ### Plants
     Dalam tabel ini, ketika pengguna sudah selesai mengisi data diri di tabel users, pengguna kemudian mengisi data di tabel plants yang dimana akan melihat tabel tombol tambah tanaman, saat mengisi data akan diminta mengisi nama kategori dan deskripsi yang dimana itu sudah tersambung di tabel kategori, ketika sudah selesai mengisikan data tanaman dan tersimpan kemudian kembali, pengguna akan melihat data nya yang baru saja di inputkan dan apabila terjadi kekeliruan dalam pengisian data, dapat menekan tombol edit untuk mengubah data yang keliru tadi, dan apabila pengguna ingin membatalkan data tanamannya dapat menekan tombol hapus
     - Tampilan awal tabel plants
-        <imG SRC="public/assets/img/menuTanaman.png">
+<imG SRC="public/assets/img/menuTanaman.png">
     - Tampilan tambah tanaman
         <imG SRC="public/assets/img/tambahTanaman.png">
     - Tampilan edit
@@ -500,7 +501,7 @@ mvc-sample/
 ### Categories
     Pada tabel categories terdapat atribut id kategori, kategori dan deskripsi.Tabel categories merupakan salah satu bagian dari tabel kelompok 2 jual beli tanaman hias.
     - Tampilan awal tabel categories
-        <imG SRC="public/assets/img/menuKategori.png">
+<imG SRC="public/assets/img/menuKategori.png">
     - Tampilan tambah categories
         <imG SRC="public/assets/img/tambahKategori.png">
     - Tampilan edit categories
@@ -514,7 +515,7 @@ mvc-sample/
     Sistem ini dirancang untuk mengelola pesanan dengan mengintegrasikan data dari dua tabel yang sudah ada: plants dan users. Pada tabel orders admin memilih nama tanaman yang sudah diinputkan oleh tabel plants, dan juga nama pembelinya yang sudah diinputkan oleh tabel users, kemudian admin memasukan data status tanaman sebagai keterangan pesanan contohnya dikemas atau dalam perjalanan. Pada tabel orders memiliki fitur admin dapat menambah, mengedit, dan menghapus nama tanaman, admin juga dapat menambah, mengedit, menghapus pembeli, kemudian admin dapat menambah, mengedit, menghapus status pesanan.
     - Tambah order
     Menambahkan pesanan baru dengan memilih nama tanaman dan pembeli dari tabel yang ada, serta menetapkan status pesanan.
-    <imG SRC="public/assets/img/menuOrder.png">
+<imG SRC="public/assets/img/menuOrder.png">
     <imG SRC="public/assets/img/tambahOrder.png">
     - Edit order
     Mengedit pesanan untuk memperbarui nama tanaman, nama pembeli, atau status pesanan.
