@@ -1,13 +1,13 @@
+<!-- app/views/categories/index.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Categories</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <title>Daftar Order</title>
-
     <style>
     body {
         margin: 0;
@@ -34,9 +34,10 @@
         z-index: 1; /* Konten tampil di atas background */
     }
 
-    
 </style>
+</head>
 
+<body>
 <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <a class="navbar-brand text-dark" href="#">Aplikasi Jual-Beli Tanaman Hias</a>
@@ -62,38 +63,34 @@
                 </ul>
             </div>
         </div>
-    </nav>
-</head>
-<body>
+</nav>
     <div class="container" style="margin-top: 80px">
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>DAFTAR ORDER</h4>
+                        <h4>DAFTAR KATEGORI</h4>
                     </div>
                     <div class="card-body">
-                        <a href="/order/create" class="btn btn-success mb-3">Tambah Order Baru</a>
+                        <a href="/categories/create" class="btn btn-success mb-3" >Tambah Kategori</a>
                         <table class="table table-bordered table-striped" id="myTable">
                             <thead class="thead-light">
                                 <tr>
-                                    <th scope="col">ID ORDER</th>
-                                    <th scope="col">NAMA TANAMAN</th>
-                                    <th scope="col">NAMA PEMBELI</th>
-                                    <th scope="col">STATUS PESANAN</th>
+                                <th scope="col">ID KATEGORI</th>
+                                    <th scope="col">KATEGORI</th>
+                                    <th scope="col">DESKRIPSI</th>
                                     <th scope="col">AKSI</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach ($orders as $order): ?>
+                                <?php foreach ($categories as $kategori): ?>
                                     <tr>
-                                        <td><?= htmlspecialchars($order['id_order']) ?></td>
-                                        <td><?= htmlspecialchars($order['nama_tanaman']) ?></td>
-                                        <td><?= htmlspecialchars($order['nama']) ?></td>
-                                        <td><?= htmlspecialchars($order['status_pesanan']) ?></td>
-                                        <td class="text-center">
-                                            <a href="/order/edit/<?php echo $order['id_order']; ?>" class="btn btn-sm btn-warning">Edit</a>
-                                            <a href="/order/delete/<?php echo $order['id_order']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Anda Yakin?')">Delete</a>
+                                    <td><?= htmlspecialchars($kategori['id_kategori']) ?></td>
+                                        <td><?= htmlspecialchars($kategori['nama_kategori']) ?></td>
+                                        <td><?= htmlspecialchars($kategori['deskripsi']) ?></td>
+                                        <td>
+                                            <a href="/categories/edit/<?php echo $kategori['id_kategori']; ?>" class="btn btn-sm btn-warning">Edit</a>
+                                            <a href="/categories/delete/<?php echo $kategori['id_kategori']; ?>" onclick="return confirm('Anda Yakin?')" class="btn btn-sm btn-danger">Delete</a>  
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
@@ -105,10 +102,12 @@
         </div>
     </div>
 
+    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables Initialization -->
     <script>
         $(document).ready(function() {
             $('#myTable').DataTable();
@@ -116,3 +115,4 @@
     </script>
 </body>
 </html>
+
