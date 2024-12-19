@@ -1,10 +1,23 @@
 # Praktikum Pemgrograman Web 2 - Politeknik Negeri Cilacap
+Pada Pemprograman Web kali ini masing - masing dari kelompok kami mendapatkan projek, dan kami mendapatkan judul Aplikasi Jual-Beli Tanaman Hias dengan anggota kelompok adzania, arfilal faiznadi, dewi mona, dan hana kurnia
 
-## Informasi Umum
-Proyek ini merupakan bagian dari kegiatan Praktisi Mengajar batch 5, antara [Politeknik Negeri Cilacap](https://pnc.ac.id/) dengan praktisi [I Nyoman Indra Darmawan](https://nyoman.id) untuk mata kuliah Praktikum Pemgrograman Web 2
+## penjelasan Aplikasi Jual-Beli Tanaman Hias
+dalam projek ini layaknya dalam sebuah aplikasi biasa yang dimana ketika pengguna akan menggunakan aplikasi ini, pengguna akan diarahkan kepada bagian halaman utama atau dashboard aplikasi nya yang berisikan beberapa tampilan seperti user, plants, categories, dan orders
 
-## Deskripsi Proyek
-Proyek ini merupakan aplikasi web sederhana yang menerapkan arsitektur Model-View-Controller (MVC) dengan menggunakan konsep Pemrograman Berorientasi Objek (OOP). Aplikasi ini adalah sebagai contoh yang dapat gunakan sebagai acuan bagi masing-masing kelompok dalam mengerjakan tugas.
+## Fitur dan atribut
+di dalam setiap tabel users, plants, categories, dan orders memiliki beberapa fitur dan kegunaan yang sama, seperti fitur tambah data, membaca atau menyimpan data, update atau edit data, kemudian hapus data, selain itu terdapat juga atribut yang berbeda-beda di setiap tabel nya seperti, di tabel users memiliki atribut  id user, nama, email, password, dan alamat, untuk tabel plants terdapat id tanaman, nama tanaman, id kategori, deskripsi, harga, penjual, di tabel categories terdapat atribut id kategori, nama kategori, deskripsi, dan terakhir di tabel orders memiliki atribut id orders, id tanaman, id user, status tanaman
+
+## users
+ketika pengguna sudah masuk ke bagian users, akan melihat tabel tombol tambah pengguna yang dimana, ketika sudah selese mengisikan data diri dan tersimpan kemudian kembali pengguna akan melihat data nya yang baru saja di inputkan dan apabila terjadi kekeliruan dalam pengisian data, dapat menekan tombol edit untuk mengubah data yang keliru tadi, dan apabila pengguna ingin membatalkan data dirinya dapat menekan tombol hapus
+
+## plants
+ketika pengguna sudah selese mengisi data diri di tabel users, pengguna kemudian mengisi data di tabel plants yang dimana akan melihat tabel tombol tambah tanaman yang dimana ketika sudah selesai mengisikan data tanaman dan tersimpan kemudian kembali, pengguna akan melihat data nya yang baru saja di inputkan dan apabila terjadi kekeliruan dalam pengisian data, dapat menekan tombol edit untuk mengubah data yang keliru tadi, dan apabila pengguna ingin membatalkan data tanamannya dapat menekan tombol hapus
+
+## categories
+di tabel ini admin meng setting nama kategori apa saja yang masuk ke dalam tanaman hias lengkap dengan deskripsi nya juga, yang nanti nya ketika pengguna memilih tanaman dengan kategori tertentu akan secara otomatis juga keluar deskripsinya
+
+## orders
+di tabel ini admin memilih data tanaman yang sudah diinputkan oleh pengguna seperti nama tanaman, dan juga nama pembeli nya, kemudian admin memasukan data status tanamn sebagai contoh dikemas atau dalam perjalanan
 
 ## Tujuan
 Tujuan dari praktikum ini adalah untuk memberikan pemahaman yang lebih baik tentang arsitektur MVC dalam pengembangan aplikasi web dan untuk meningkatkan kemampuan mahasiswa dalam menerapkan konsep OOP serta melakukan operasi CRUD (Create, Read, Update, Delete) pada data.
