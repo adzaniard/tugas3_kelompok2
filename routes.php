@@ -3,12 +3,36 @@
 
 require_once 'app/controllers/CategoriesController.php';
 require_once 'app/controllers/OrderController.php';
+require_once 'app/controllers/UserController.php';
 
 $controller1 = new CategoriesController();
 $controller2 = new OrderController();
+$controller3 = new UserController();
 
 $url = $_SERVER['REQUEST_URI'];
 $requestMethod = $_SERVER['REQUEST_METHOD'];
+
+if ($url == '/user/index') {
+    $controller3->index();
+} elseif ($url == '/user/create' && $requestMethod == 'GET') {
+    $controller3->create();
+} elseif ($url == '/user/store' && $requestMethod == 'POST') {
+    $controller3->store();
+} elseif (preg_match('/\/user\/edit\/(\d+)/', $url, $matches) && $requestMethod == 'GET') {
+    $userId = $matches[1];
+    $controller3->edit($userId);
+} elseif (preg_match('/\/user\/update\/(\d+)/', $url, $matches) && $requestMethod == 'POST') {
+    $userId = $matches[1];
+    $controller3->update($userId, $_POST);
+} elseif (preg_match('/\/user\/delete\/(\d+)/', $url, $matches) && $requestMethod == 'GET') {
+    $userId = $matches[1];
+    $controller3->delete($userId);
+}elseif ($url == '/'){
+    $controller3->dashboard();
+}else {
+        http_response_code(404);
+        echo "404 Not Found";
+}
 
 if ($url == '/categories/index') {
     $controller1->index();
@@ -47,7 +71,6 @@ if ($url == '/order/index' || $url == '/') {
 } elseif (preg_match('/\/order\/delete\/(\d+)/', $url, $matches) && $requestMethod == 'GET') {
     $orderId = $matches[1];
     $controller2->delete($orderId);
-
 } else {
     http_response_code(404);
     echo "404 Not Found";

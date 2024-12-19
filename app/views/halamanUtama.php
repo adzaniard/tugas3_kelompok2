@@ -111,7 +111,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Categories</h5>
-              <img src="assets/img/4.jpg" alt="">
+              <img src="assets/img/3.jpg" alt="">
               <p class="card-text">Pengelolaan data kategori tanaman hias.</p>
               <a href="/categories/index" class="btn btn-primary">Go to Categories</a>
             </div>
@@ -121,7 +121,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Orders</h5>
-              <img src="assets/img/3.png" alt="">
+              <img src="assets/img/4.png" alt="">
               <p class="card-text">Pengelolaan data pesanan tanaman.</p>
               <a href="/orders/index" class="btn btn-primary">Go to Orders</a>
             </div>
