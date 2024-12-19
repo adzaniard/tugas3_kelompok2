@@ -15,6 +15,11 @@ class plantsController {
 
     }
 
+    public function dashboard() {
+        require_once '../app/views/halamanUtama.php';
+    }
+
+
     public function create() {
         $categories = $this->plantsModel->getAllcategories();
         require_once '../app/views/plants/create.php';

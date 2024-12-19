@@ -4,9 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Edit Tanaman</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        height: 100vh;
+    }
+
+    /* Background Gambar Blur */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1692328601572-27f87f516a90?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGFuYW1hbnxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+        filter: blur(2px); /* Efek blur */
+        z-index: -1; /* Agar di belakang konten */
+    }
+
+    .container {
+        position: relative;
+        z-index: 1; /* Konten tampil di atas background */
+    }
+
+    
+</style>
 </head>
 <body>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
    
 
 
@@ -15,7 +44,7 @@
            <div class="col-md-8 offset-md-2">
              <div class="card">
                <div class="card-header">
-                    EDIT TANAMAN
+                    <h4>EDIT TANAMAN</h4>
                </div>
                <div class="card-body">
 
@@ -50,10 +79,9 @@
     <input type="varchar" name="penjual" id="penjual" value="<?php echo $plants['penjual']; ?>" placeholder="Masukkan Penjual" class="form-control" required>
     </div>
 
-    <button type="submit" class="btn btn-success">SIMPAN</button>
-    <button type="reset" class="btn btn-warning">RESET</button>
+    <button type="submit" class="btn btn-success">Simpan</button>
+    <a href="/plants/index" class="btn btn-primary">Back to List</a>
     </form>
-    <a href="/plants/index">Back to List</a>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
