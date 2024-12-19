@@ -74,8 +74,8 @@
                     </div>
                     <div class="card-body">
                         <a href="/order/create" class="btn btn-success mb-3">Tambah Order Baru</a>
-                        <table class="table table-bordered" id="myTable">
-                            <thead>
+                        <table class="table table-bordered table-striped" id="myTable">
+                            <thead class="thead-light">
                                 <tr>
                                     <th scope="col">ID ORDER</th>
                                     <th scope="col">NAMA TANAMAN</th>
@@ -93,7 +93,7 @@
                                         <td><?= htmlspecialchars($order['status_pesanan']) ?></td>
                                         <td class="text-center">
                                             <a href="/order/edit/<?php echo $order['id_order']; ?>" class="btn btn-sm btn-warning">Edit</a>
-                                            <a href="/order/delete/<?php echo $order['id_order']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?')">Delete</a>
+                                            <a href="/order/delete/<?php echo $order['id_order']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Anda Yakin?')">Delete</a>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
