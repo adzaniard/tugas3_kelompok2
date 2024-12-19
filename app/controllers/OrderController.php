@@ -12,7 +12,10 @@ class OrderController {
     public function index() {
         $orders = $this->orderModel->getAllOrders();
         require_once '../app/views/order/index.php';
+    }
 
+    public function dashboard() {
+        require_once '../app/views/halamanUtama.php';
     }
 
     public function create() {

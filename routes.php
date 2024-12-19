@@ -12,6 +12,7 @@ $controller3 = new UserController();
 $url = $_SERVER['REQUEST_URI'];
 $requestMethod = $_SERVER['REQUEST_METHOD'];
 
+
 if ($url == '/user/index') {
     $controller3->index();
 } elseif ($url == '/user/create' && $requestMethod == 'GET') {
@@ -71,6 +72,8 @@ if ($url == '/order/index' || $url == '/') {
 } elseif (preg_match('/\/order\/delete\/(\d+)/', $url, $matches) && $requestMethod == 'GET') {
     $orderId = $matches[1];
     $controller2->delete($orderId);
+} elseif ($url == '/'){
+    $controller2->dashboard();
 } else {
     http_response_code(404);
     echo "404 Not Found";
